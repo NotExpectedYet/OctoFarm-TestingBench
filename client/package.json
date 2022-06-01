@@ -6,8 +6,8 @@
     "build": "webpack --mode=production",
     "webpack": "webpack",
     "dev": "webpack --watch",
-    "release": "release-it",
-    "release:dry":  "release-it --dry-run"
+    "release": "release-it --ci",
+    "release:dry":  "release-it --dry-run --ci"
   },
   "repository": {
     "type": "git",
