@@ -1,13 +1,13 @@
 {
   "git": {
-    "commitMessage": "chore: release v${version}",
+    "commitMessage": "release(release): client release v${version}",
     "commit": true,
     "tag": false,
     "push": false
   },
   "npm": {
     "publish": true,
-    "publishPath": "./dist"
+    "publishPath": "."
   },
   "github": {
     "release": false
