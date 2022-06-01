@@ -3,7 +3,7 @@ on:
   pull_request:
     types: [closed]
     branches:
-      - canary
+      - development
     paths-ignore:
       - "server/package.json"
       - "client/package.json"
