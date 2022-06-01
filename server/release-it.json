@@ -1,7 +1,6 @@
 {
   "git": {
     "commitMessage": "chore(release): server release v${version}",
-    "changelog": "auto-changelog --stdout --commit-limit false -u --template https://raw.githubusercontent.com/release-it/release-it/master/templates/keepachangelog.hbs",
     "commit": true,
     "tag": true,
     "push": true,
@@ -17,8 +16,9 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "infile": "../CHANGELOG.md",
+      "ignoreRecommendedBump": true,
       "preset": {
-        "name": "conventionalcommits",
+        "name": "angular",
         "header": "OctoFarm's Changelog",
         "types": [
           {
