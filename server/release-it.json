@@ -16,9 +16,6 @@
   "plugins": {
     "@release-it/conventional-changelog": {
       "infile": "../CHANGELOG.md",
-      "writerOpts": {
-        "groupBy": "scope"
-      },
       "preset": {
         "name": "conventionalcommits",
         "header": "OctoFarm's Changelog",
