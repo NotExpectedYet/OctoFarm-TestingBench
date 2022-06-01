@@ -18,7 +18,7 @@
       "infile": "../CHANGELOG.md",
       "ignoreRecommendedBump": true,
       "preset": {
-        "name": "angular",
+        "name": "conventionalcommits",
         "header": "OctoFarm's Changelog",
         "types": [
           {
