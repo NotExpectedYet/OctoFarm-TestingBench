@@ -1,3 +1,5 @@
+console.log("A change for server")
+
 let majorVersion = null;
 try {
   majorVersion = parseInt(process.version.replace("v", "").split(".")[0]);

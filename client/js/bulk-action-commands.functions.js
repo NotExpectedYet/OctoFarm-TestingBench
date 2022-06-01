@@ -9,6 +9,8 @@ import {
   bulkPrintFileSetup,
 } from "./pages/printer-manager/functions/bulk-commands-functions";
 
+console.log("A change for client")
+
 const multiPrintersSection = document.getElementById("multiPrintersSection");
 
 const multiPrintCommandBtn = document.getElementById("multiPrintCommand");
