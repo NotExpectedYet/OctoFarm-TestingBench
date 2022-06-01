@@ -1,0 +1,15 @@
+{
+  "git": {
+    "commitMessage": "chore: release v${version}",
+    "commit": true,
+    "tag": false,
+    "push": false
+  },
+  "npm": {
+    "publish": true,
+    "publishPath": "./dist"
+  },
+  "github": {
+    "release": false
+  }
+}

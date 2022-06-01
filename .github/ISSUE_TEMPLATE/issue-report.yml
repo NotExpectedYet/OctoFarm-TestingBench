@@ -2,16 +2,14 @@ name: Issue Report
 description: Please fill this in to better help the dev help you.
 labels: bug
 body:
-- type: markdown
+- type: textarea
   attributes:
+    label: Big thanks for helping OctoFarm grow!
     value: |
-        ### Big thanks for helping OctoFarm grow!
-
         The OctoFarm developer would prefer people pointing out bugs they find so we can make OctoFarm
         a much more stable platform so thanks for starting this issue!
 
         Please fill out all required field (*) below to better help the dev understand!
-
 - type: input
   id: octofarm-version
   attributes:
@@ -64,7 +62,6 @@ body:
     label: Description of the problem
     description: Also tell us, what did you expect to happen?
     placeholder: Tell us what you see!
-    render: markdown
   validations:
     required: true
 - type: textarea
@@ -93,14 +90,15 @@ body:
     label: To avoid the problem I had to
     placeholder: |
       ...
-- type: markdown
+- type: textarea
+  id: log-note
   attributes:
+    label: Logs and Additional Information
     value: |
-      ### Logs
       If you've got access to the System screen it's better to just upload the log dump file as it will
       contain all relevant information for the developers.
 
-      1) **OctoFarm Server logs** Add the system page logs .zip file (if you cant access it, upload your `./logs` folder content here)
+      1) **OctoFarm Server logs** Go to System -> Logs -> Generate Log Dump and upload the *.zip provided..
       (How to: https://javascript.info/devtools)
       2) **Screenshots / Videos**
       These are always effective, add screenshots to help explain your problem. Try "Peek" on Linux or "ShareX" on Windows.
