@@ -3,7 +3,8 @@
     "commitMessage": "chore(release): server release v${version}",
     "commit": true,
     "tag": true,
-    "push": false
+    "push": false,
+    "requireCleanWorkingDir": false
   },
   "npm": {
     "publish": false
