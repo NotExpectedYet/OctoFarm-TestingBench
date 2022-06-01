@@ -63,12 +63,12 @@ jobs:
           npm ci --no-optional
           npm run build
       # Publish the new build to npm
-      - name: publish to npm
-        if: steps.filter.outputs.client == 'true'
-        uses: JS-DevTools/npm-publish@v1
-        with:
-          token: ${{ secrets.NPM_TOKEN }}
-          package: ./client/package.json
+#      - name: publish to npm
+#        if: steps.filter.outputs.client == 'true'
+#        uses: JS-DevTools/npm-publish@v1
+#        with:
+#          token: ${{ secrets.NPM_TOKEN }}
+#          package: ./client/package.json
 
       # Grab the client package version into a variable.
       - name: get-client-current-version
