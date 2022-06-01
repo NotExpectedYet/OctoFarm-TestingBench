@@ -52,7 +52,9 @@ jobs:
         if: steps.filter.outputs.client == 'true'
         run: |
           cd ./client
-          npm install
+          npm ci --no-optional
+          npm run build
+          git status
           npm run release
 
       # Run the server release sequence
@@ -60,7 +62,7 @@ jobs:
         if: steps.filter.outputs.server == 'true'
         run: |
           cd ../server
-          npm install
+          git status
           npm run release
 
       # Wait for 30 seconds just to make sure npm has new package. Not always needed but on the off chance I don't have to re-run the action!
