@@ -53,6 +53,8 @@ jobs:
         run: |
           cd ./client
           npm install
+          npm run build
+          git status
           npm run release
 
       # Run the server release sequence
@@ -61,6 +63,7 @@ jobs:
         run: |
           cd ../server
           npm install
+          git status
           npm run release
 
       # Wait for 30 seconds just to make sure npm has new package. Not always needed but on the off chance I don't have to re-run the action!
