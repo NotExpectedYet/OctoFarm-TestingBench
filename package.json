@@ -36,7 +36,8 @@
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-standard": "^4.1.0",
     "husky": "^8.0.0",
-    "prettier": "^2.6.0"
+    "prettier": "^2.6.0",
+    "release-it": "^15.0.0"
   },
   "pkg": {
     "scripts": [
@@ -54,9 +55,5 @@
       "node14-linux-arm64"
     ],
     "outputPath": "dist"
-  },
-  "dependencies": {
-    "@commitlint/cli": "^16.2.4",
-    "@commitlint/config-conventional": "^16.2.4"
   }
 }
