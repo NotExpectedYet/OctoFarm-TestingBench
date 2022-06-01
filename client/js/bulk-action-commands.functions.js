@@ -9,7 +9,7 @@ import {
   bulkPrintFileSetup,
 } from "./pages/printer-manager/functions/bulk-commands-functions";
 
-console.log("A change for client 2")
+console.log("A change for client 3")
 
 const multiPrintersSection = document.getElementById("multiPrintersSection");
 
