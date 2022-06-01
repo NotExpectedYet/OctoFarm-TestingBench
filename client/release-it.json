@@ -7,7 +7,10 @@
   },
   "npm": {
     "publish": true,
-    "publishPath": "."
+    "publishPath": ".",
+    "publishConfig": {
+      "access": "public"
+    }
   },
   "github": {
     "release": false
