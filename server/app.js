@@ -1,4 +1,4 @@
-console.log("A change for server 5")
+console.log("A change for server 6")
 
 let majorVersion = null;
 try {
