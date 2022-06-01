@@ -52,7 +52,7 @@ jobs:
         if: steps.filter.outputs.client == 'true'
         run: |
           cd ./client
-          npm install
+          npm ci --no-optional
           npm run build
           git status
           npm run release
@@ -62,7 +62,6 @@ jobs:
         if: steps.filter.outputs.server == 'true'
         run: |
           cd ../server
-          npm install
           git status
           npm run release
 
