@@ -53,15 +53,15 @@ jobs:
         run: |
           cd ./client
           npm ci --no-optional
-          npm run build
           git status
           npm run release
+          cd ../
 
       # Run the server release sequence
       - name: server build
         if: steps.filter.outputs.server == 'true'
         run: |
-          cd ../server
+          cd ./server
           git status
           npm run release
 
